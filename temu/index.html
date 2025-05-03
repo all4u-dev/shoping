@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All4U Shopping Mall</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">All4U</div>
+    <input type="text" placeholder="Search products..." id="searchInput" />
+    <div class="nav-links">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+      <button id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <section class="categories">
+    <button data-category="All">All</button>
+    <button data-category="Fashion">Fashion</button>
+    <button data-category="Electronics">Electronics</button>
+    <button data-category="Groceries">Groceries</button>
+  </section>
+
+  <main id="productGrid" class="product-grid"></main>
+
+  <div id="cartPanel" class="cart-panel hidden">
+    <h3>Your Cart</h3>
+    <div id="cartItems"></div>
+    <p>Total: ₦<span id="cartTotal">0.00</span></p>
+    <a href="checkout.html" class="checkout-btn">Checkout</a>
+    <button id="closeCart">Close</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
